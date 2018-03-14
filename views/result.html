@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Noto+Sans:400,700" rel="stylesheet">
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script language="JavaScript">
+        var socket = io.connect('www.changlabserver.com:4200');
+        socket.emit('resultdata');
+        socket.on('data',function (listA,listB) {
+            console.log(listA);
+            console.log(listB)
+           /// $("#A").text(listA);
+           /// $("#B").text(listB);
+
+        });
+        socket.on('bluewin',function () {
+
+            $("body").css("background","url(images/bluewin.png)");
+            $("body").css("background-size","cover");
+            $("body").css("background-repeat","no-repeat");
+
+        });
+        socket.on('redwin',function () {
+
+            $("body").css("background","url(images/redwin.png)");
+            $("body").css("background-size","cover");
+            $("body").css("background-repeat","no-repeat");
+
+
+        });
+        function restart() {
+            socket.emit('restart');
+            window.location.href='/home';
+
+
+        }
+        </script>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #again{
+            font-family: 'Bungee', cursive;
+            position: absolute;
+            bottom: 25%;
+            left: 68%;
+            font-size: 45px;
+            border: 8px solid;
+            padding: 10px;
+        }
+        #au{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-family: 'Bungee', cursive;
+            opacity: 0.6;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+<h1 id ="A"></h1>
+<h1 id="B"></h1>
+<button id="again" onclick="restart()">Play Again</button>
+</body>
+</html>

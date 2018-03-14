@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Noto+Sans:400,700" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        body{
+            background: url("https://scontent.ftpe2-1.fna.fbcdn.net/v/t31.0-8/26221201_1060075544134549_3152031518034934608_o.jpg?oh=29073714e0075dd3d131eb05b255ef34&oe=5AEFA836");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #au{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-family: 'Bungee', cursive;
+            opacity: 0.6;
+            border: 2px solid;
+        }
+
+    </style>
+    <script>
+        function loading() {
+            window.location="www.changlabserver.com:3000/loading";
+        }
+    </script>
+</head>
+<body>
+
+<div>
+    <form id="form1" name="form1" action="/loading" method="get">
+        <input type="text" name="name" id="yourname" placeholder="YOUR NAME" required="required" />
+        <input id="button" type="submit" value="ENTER" id="enter" />
+    </form>
+
+    <audio id="au" src="stylesheets/BGM.mp3" autoplay controls></audio>
+</div>
+</body>
+</html>

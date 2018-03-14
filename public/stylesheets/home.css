@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+}
+
+body {
+    /*padding: 50px;*/
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /*background:url(img/homeBG.png);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -moz-background-size: cover;
+    background-size: cover;
+    /*overflow-y:hidden;*/
+}
+
+a {
+  color: #00B7FF;
+}
+
+input {
+    vertical-align: middle;
+    font-family: 'Bungee', cursive;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    /*height: 100px;
+    width: 320px;*/
+    height: 13%;
+    width: 19.5%;
+    line-height: 40px;
+    font-size: 44px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #000000;
+    position: absolute;
+    /*top: 420px;
+    left: 130px;*/
+    /*top: 37%;
+    left: 6.7%;*/
+    margin-top: 26%;
+    margin-left: 9%;
+    -moz-transform:skewY(-4deg);
+    -webkit-transform:skewY(-4deg);
+    -o-transform:skewY(-4deg);
+    -ms-transform:skewY(-4deg);
+    transform:skewY(-4deg);
+}
+
+#button {
+    /*font-family: 'Noto Sans', sans-serif;*/
+    font-family: 'Bungee', cursive;
+    /*font-weight:bold;*/
+    font-size: 54px;
+    background-color:#FFFFFF;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #000000;
+    /*padding-top: 0.001em;
+    padding-right: 0.8em;
+    padding-bottom: 0.001em;
+    padding-left: 0.8em;*/
+    /*height: 100px;
+    width: 335px;*/
+    height: 15%;
+    width: 21.5%;    
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    /*top: 390px;
+    left: 130px;*/
+    /*top: 36%;
+    left: 6.7%;*/
+    margin-top: 39%;
+    margin-left: 8.5%;        
+    -moz-transform:skewY(-4deg);
+    -webkit-transform:skewY(-4deg);
+    -o-transform:skewY(-4deg);
+    -ms-transform:skewY(-4deg);
+    transform:skewY(-4deg);
+}
